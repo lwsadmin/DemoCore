@@ -1,20 +1,18 @@
 ﻿
 (function () {
-    debugger;
+
     $(function () {
         var categoryService = abp.services.app.category;
         var _$modal = $("#CreateModal");
         var _$form = _$modal.find("form");
         _$form.find("button[type='submit']").click(function (e) {
             e.preventDefault();
-            debugger;
             if (!_$form.valid()) {
                 return;
             }
-            debugger;
             var  EditDto = _$form.serializeFormToObject();
             abp.ui.setBusy(_$form);
-            categoryService.createOrEditAsync(EditDto).done(function () {
+            categoryService.createOrEdit(EditDto).done(function () {
                 _$modal.modal('hide');
                 Refresh();
             }).always(function () {
@@ -32,19 +30,19 @@
             window.location.reload();
         }
 
-        $(".delete-role").click(function () {
+        $(".delete").click(function () {
             var id = $(this).attr("data-id");
             var name = $(this).attr("data-name");
             abp.message.confirm("确定要商品分类【" + name + "】吗?", function (isConfirm) {
                 if (isConfirm) {
-                    pesonService.deletePerson(id).done(function () {
+                    categoryService.delete(id).done(function () {
                         Refresh();
                     });
                 }
             });
         });
 
-        $(".edit-role").click(function (e) {
+        $(".edit").click(function (e) {
             e.preventDefault();
 
             var id = $(this).attr("data-id");

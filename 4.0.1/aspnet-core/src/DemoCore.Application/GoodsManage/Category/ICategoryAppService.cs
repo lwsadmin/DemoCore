@@ -10,5 +10,6 @@ namespace DemoCore.GoodsManage.Category.Dto
     {
        Task<List<CategoryListDto>> GetAllListAsync();
         Task CreateOrEditAsync(CategoryEditDto dto);
+        Task DeleteAsync(long id);
     }
 }

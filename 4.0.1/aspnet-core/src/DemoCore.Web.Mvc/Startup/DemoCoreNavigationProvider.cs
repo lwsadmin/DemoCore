@@ -50,11 +50,11 @@ namespace DemoCore.Web.Startup
                         L("GoodsManage"),
                         icon: "menu"
                     ).AddItem(new MenuItemDefinition(
-                                "GoodsCategory",
+                               PageNames.GoodsCategory,
                                L("GoodsCategory"),
                                 url: "/GoodsManage/Category/List"
                      )).AddItem(new MenuItemDefinition(
-                                "Goods",
+                                PageNames.Goods,
                                 L("Goods"),
                                 url: "/GoodsManage/Goods/List"
                      ))

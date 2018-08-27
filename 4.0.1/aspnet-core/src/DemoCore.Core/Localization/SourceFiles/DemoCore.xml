@@ -6,6 +6,9 @@
     <text name="GoodsManage" value="GoodsManage" />
     <text name="GoodsCategory" value="GoodsCategory" />
     <text name="Goods" value="Goods" />
+    <text name="Operate" value="Operate" />
+    <text name="Edit" value="Edit" />
+    <text name="Detele" value="Detele" />
     
     <text name="WellcomeMessage" value="Welcome to DemoCore!" />
     <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
@@ -63,7 +66,6 @@
     <text name="WaitingForEmailActivation">Your email address should be activated</text>
     <text name="Roles">Roles</text>
     <text name="DisplayName">Display Name</text>
-    <text name="Edit">Edit</text>
     <text name="Delete">Delete</text>
     <text name="CreateNewRole">Create new role</text>
     <text name="RoleName">Role Name</text>

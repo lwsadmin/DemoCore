@@ -6,11 +6,13 @@ using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Abp.Timing;
 using System.ComponentModel.DataAnnotations.Schema;
+using Abp.Dependency;
+using Abp.Runtime.Session;
 
 namespace DemoCore.GoodsManager
 {
     [Table("TGoodsCategory")]
-    public class Category : Entity<long>, IMustHaveTenant, IHasCreationTime
+    public class Category : Entity<long>, IHasCreationTime, IMustHaveTenant
     {
         public int TenantId { get; set; }
 
@@ -21,11 +23,13 @@ namespace DemoCore.GoodsManager
         [MaxLength(200, ErrorMessage = "备注信息最多不能超出200个字符!")]
         public string Memo { get; set; }
 
-        public DateTime CreationTime
-        {
-            get { return Clock.Now; }
-            set { }
-        }
+        public DateTime CreationTime { get; set; }
+      
 
+        public Category()
+        {
+            this.CreationTime = Clock.Now;
+        }
     }
+
 }

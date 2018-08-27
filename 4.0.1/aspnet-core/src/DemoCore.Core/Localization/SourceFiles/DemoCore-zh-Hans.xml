@@ -11,6 +11,9 @@
     <text name="Title" value="名称" />
     <text name="CreationTime" value="创建时间" />
     <text name="Add" value="添加" />
+    <text name="Edit" value="编辑" />
+    <text name="Delete" value="删除" />
+    <text name="Operate" value="操作" />
 
     <text name="Roles" value="角色" />
     <text name="GoodsManage" value="商品管理" />

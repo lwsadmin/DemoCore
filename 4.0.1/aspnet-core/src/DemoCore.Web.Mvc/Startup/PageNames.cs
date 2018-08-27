@@ -8,5 +8,7 @@
         public const string Users = "Users";
         public const string Roles = "Roles";
         public const string GoodsManage = "GoodsManage";
+        public const string GoodsCategory = "GoodsManage.GoodsCategory";
+        public const string Goods = "GoodsManage.Goods";
     }
 }
