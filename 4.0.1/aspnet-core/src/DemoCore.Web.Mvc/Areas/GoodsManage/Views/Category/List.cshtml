@@ -50,7 +50,7 @@
                                     </a>
                                     <ul class="dropdown-menu pull-right">
                                         <li><a href="#" class="waves-effect waves-block edit" data-id="@item.Id" data-toggle="modal" data-target="#EditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
-                                        @if (IsGranted(PermissionNames.GoodsCategoryDetele))
+                                        @if (IsGranted("GoodsCategory.Delete"))
                                         {
                                             <li>
                                                 <a href="#" class="waves-effect waves-block delete" data-id="@item.Id" data-name="@item.Title">

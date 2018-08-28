@@ -1,37 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Navigation>
-  <First Name="SystemSet" PermissionNames="SystemSet" Title="系统设置" Icon="menu">
-    <Second Name="HomePage" Title="主页" PermissionNames="HomePage" Url="/" Icon="home"></Second>
+  <First Name="SystemSet" PermissionName="SystemSet" Title="系统设置" Icon="menu">
+    <Second Name="HomePage"  Title="主页" PermissionName="HomePage" Url="/" Icon="home"></Second>
 
     <!--<Second Name="Tenants" Title="Tenants" Icon="business" Url="/Tenants">
       <Action Name="Add" Title="新增"/>
       <Action Name="Edit" Title="编辑"/>
       <Action Name="Delete" Title="删除"/>法  
     </Second>-->
-    <Second Name="Users" Title="Users" Icon="people" Url="/Users">
-      <Action Name="Add" Title="新增"/>
-      <Action Name="Edit" Title="编辑"/>
-      <Action Name="Delete" Title="删除"/>
+    <Second Name="Users" PermissionName="Users" Title="Users" Icon="people" Url="/Users">
+      <Action Name="Add" Title="新增" PermissionName="Users.Add"/>
+      <Action Name="Edit" Title="编辑" PermissionName="Users.Edit"/>
+      <Action Name="Delete" Title="删除" PermissionName="Users.Delete"/>
     </Second>
-    <Second Name="Roles" Title="Roles" Icon="local_offer" Url="/Roles">
-      <Action Name="Add" Title="新增"/>
-      <Action Name="Edit" Title="编辑"/>
-      <Action Name="Delete" Title="删除"/>
-    </Second>
-  </First>
-
-  <First Name="GoodsManage" Title="GoodsManage" Icon="menu">
-    <Second Name="GoodsCategory" Title="商品类别" Url="/GoodsManage/Category/List">
-      <Action Name="Add" Title="新增"/>
-      <Action Name="Edit" Title="编辑"/>
-      <Action Name="Delete" Title="删除"/>
-    </Second>
-    <Second Name="Goods" Title="商品管理" Url="/GoodsManage/Category/List">
-      <Action Name="Add" Title="新增"/>
-      <Action Name="Edit" Title="编辑"/>
-      <Action Name="Delete" Title="删除"/>
+    <Second Name="Roles" Title="Roles" PermissionName="Roles" Icon="local_offer" Url="/Roles">
+      <Action Name="Add" Title="新增" PermissionName="Roles.Add"/>
+      <Action Name="Edit" Title="编辑" PermissionName="Roles.Edit"/>
+      <Action Name="Delete" Title="删除" PermissionName="Roles.Delete"/>
     </Second>
   </First>
 
-
+  <First Name="GoodsManage" PermissionName="GoodsManage" Title="GoodsManage" Icon="menu">
+    <Second Name="GoodsCategory" PermissionName="GoodsCategory" Title="商品类别" Url="/GoodsManage/Category/List">
+      <Action Name="Add" Title="新增" PermissionName="GoodsCategory.Add"/>
+      <Action Name="Edit" Title="编辑" PermissionName="GoodsCategory.Edit"/>
+      <Action Name="Delete" Title="删除" PermissionName="GoodsCategory.Delete"/>
+    </Second>
+    <Second Name="Goods" Title="商品管理" PermissionName="Goods" Url="/GoodsManage/Category/List">
+      <Action Name="Add" Title="新增" PermissionName="Goods.Add"/>
+      <Action Name="Edit" Title="编辑" PermissionName="Goods.Edit"/>
+      <Action Name="Delete" Title="删除" PermissionName="Goods.Delete"/>
+    </Second>
+  </First>
 </Navigation>

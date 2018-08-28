@@ -9,7 +9,7 @@ using DemoCore.Web.Models.Users;
 
 namespace DemoCore.Web.Controllers
 {
-    [AbpMvcAuthorize(PermissionNames.Pages_Users)]
+    [AbpMvcAuthorize("Users")]
     public class UsersController : DemoCoreControllerBase
     {
         private readonly IUserAppService _userAppService;

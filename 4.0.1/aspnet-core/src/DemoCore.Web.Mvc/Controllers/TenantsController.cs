@@ -8,7 +8,7 @@ using DemoCore.MultiTenancy;
 
 namespace DemoCore.Web.Controllers
 {
-    [AbpMvcAuthorize(PermissionNames.Pages_Tenants)]
+    [AbpMvcAuthorize]
     public class TenantsController : DemoCoreControllerBase
     {
         private readonly ITenantAppService _tenantAppService;

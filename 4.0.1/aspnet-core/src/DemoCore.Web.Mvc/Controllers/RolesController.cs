@@ -9,7 +9,7 @@ using DemoCore.Web.Models.Roles;
 
 namespace DemoCore.Web.Controllers
 {
-    [AbpMvcAuthorize(PermissionNames.Pages_Roles)]
+    [AbpMvcAuthorize("Roles")]
     public class RolesController : DemoCoreControllerBase
     {
         private readonly IRoleAppService _roleAppService;

@@ -18,11 +18,11 @@ namespace DemoCore.Authorization
             XmlReader reader = XmlReader.Create(currentDirectory, settings);
             while (reader.Read())
             {
-             
-                     context.CreatePermission(reader.GetAttribute("PermissionName"), 
-                         L(reader.GetAttribute("Name")));
+                if (reader.GetAttribute("PermissionName") == null)
+                    continue;
+                context.CreatePermission(reader.GetAttribute("PermissionName"),
+                    L(reader.GetAttribute("Name")));
             }
-
         }
 
         private static ILocalizableString L(string name)
