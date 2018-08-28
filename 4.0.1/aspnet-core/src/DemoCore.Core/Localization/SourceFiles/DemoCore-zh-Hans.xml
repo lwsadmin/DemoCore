@@ -9,6 +9,7 @@
     <text name="Memo" value="备注" />
     <text name="Users" value="用户" />
     <text name="Title" value="名称" />
+    <text name="SystemSet" value="系统设置" />
     <text name="CreationTime" value="创建时间" />
     <text name="Add" value="添加" />
     <text name="Edit" value="编辑" />
