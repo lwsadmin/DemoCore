@@ -1,4 +1,6 @@
-﻿using Abp.Authorization;
+﻿using System.IO;
+using System.Xml;
+using Abp.Authorization;
 using Abp.Localization;
 using Abp.MultiTenancy;
 
@@ -8,12 +10,19 @@ namespace DemoCore.Authorization
     {
         public override void SetPermissions(IPermissionDefinitionContext context)
         {
-            context.CreatePermission(PermissionNames.Pages_Users, L("Users"));
-            context.CreatePermission(PermissionNames.Pages_Roles, L("Roles"));
-            context.CreatePermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
+            XmlDocument NavigationXml = new XmlDocument();
+            string currentDirectory = Path.GetFullPath("../../src/DemoCore.Core/Localization/XmlData/Navigation.xml");
 
-            context.CreatePermission(PermissionNames.GoodsCategoryDetele, L("GoodsDelete"));
-            context.CreatePermission(PermissionNames.GoodsDelete, L($"GoodsDelete"));
+            XmlReaderSettings settings = new XmlReaderSettings();
+            settings.IgnoreComments = true; //忽略注释
+            XmlReader reader = XmlReader.Create(currentDirectory, settings);
+            while (reader.Read())
+            {
+             
+                     context.CreatePermission(reader.GetAttribute("PermissionName"), 
+                         L(reader.GetAttribute("Name")));
+            }
+
         }
 
         private static ILocalizableString L(string name)
