@@ -3,11 +3,11 @@
   <First Name="SystemSet" PermissionName="SystemSet" Title="系统设置" Icon="menu">
     <Second Name="HomePage"  Title="主页" PermissionName="HomePage" Url="/" Icon="home"></Second>
 
-    <!--<Second Name="Tenants" Title="Tenants" Icon="business" Url="/Tenants">
-      <Action Name="Add" Title="新增"/>
+    <Second Name="Tenants" Title="Tenants" PermissionName="Tenants" Icon="business" Url="/Tenants">
+      <!--<Action Name="Add" Title="新增"/>
       <Action Name="Edit" Title="编辑"/>
-      <Action Name="Delete" Title="删除"/>法  
-    </Second>-->
+      <Action Name="Delete" Title="删除"/>-->
+    </Second>
     <Second Name="Users" PermissionName="Users" Title="Users" Icon="people" Url="/Users">
       <Action Name="Add" Title="新增" PermissionName="Users.Add"/>
       <Action Name="Edit" Title="编辑" PermissionName="Users.Edit"/>

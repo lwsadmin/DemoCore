@@ -30,8 +30,8 @@ namespace DemoCore.Web.Startup
                         item.Attributes["Name"].Value,
                         L(item.Attributes["Name"].Value),
                         url: "",
-                        icon: item.Attributes["Icon"].Value
-                        //requiresAuthentication:true
+                        icon: item.Attributes["Icon"].Value,
+                        requiredPermissionName: item.Attributes["PermissionName"].Value
                         );
                     if (item.ChildNodes != null && item.ChildNodes.Count > 0)
                     {
@@ -41,6 +41,7 @@ namespace DemoCore.Web.Startup
                                  subItem.Attributes["Name"].Value,
                                  L(subItem.Attributes["Name"].Value),
                                  url: subItem.Attributes["Url"].Value,
+                                 requiredPermissionName: subItem.Attributes["PermissionName"].Value,
                                  icon: ""
                                  );
                             first.AddItem(second);
@@ -50,7 +51,6 @@ namespace DemoCore.Web.Startup
                 }
             }
         }
-
         private static ILocalizableString L(string name)
         {
             return new LocalizableString(name, DemoCoreConsts.LocalizationSourceName);
