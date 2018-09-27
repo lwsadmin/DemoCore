@@ -6,6 +6,7 @@ using Abp.Application.Services;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.Runtime.Session;
+using Abp.UI;
 using DemoCore.GoodsManage.Category.Dto;
 using DemoCore.GoodsManage.Dto;
 using model = DemoCore.GoodsManager;
@@ -24,6 +25,7 @@ namespace DemoCore.GoodsManage.Category
         public async Task<List<CategoryListDto>> GetAllListAsync()
         {
             var query = await _Repository.GetAllListAsync();
+
             return query.MapTo<List<CategoryListDto>>();
         }
         public async Task CreateOrEditAsync(CategoryEditDto dto)
@@ -32,7 +34,7 @@ namespace DemoCore.GoodsManage.Category
                 dto.TenantId = (int)_AbpSession.TenantId;
             else
                 dto.TenantId = 0;
-
+            throw new UserFriendlyException("ss");
             if (dto.Id > 0)
                 await _Repository.UpdateAsync(dto.MapTo<model.Category>());
             else
