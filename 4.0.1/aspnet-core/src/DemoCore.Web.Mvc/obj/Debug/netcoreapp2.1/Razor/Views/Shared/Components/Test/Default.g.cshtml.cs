@@ -19,7 +19,7 @@ using Abp.Localization;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ed69eb33ae4e6ac5dc430c4846aab19452076571", @"/Views/Shared/Components/Test/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"19cc3cddfd188268f195bfe70422e5739d34bc9b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"59b606ade4b1b258816958d862bcbe91f3898c03", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Test_Default : DemoCore.Web.Views.DemoCoreRazorPage<dynamic>
     {
         #pragma warning disable 1998

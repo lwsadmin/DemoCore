@@ -12,8 +12,12 @@
     <RootNamespace>DemoCore</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Localization\XmlData\Navigation.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Localization\SourceFiles\DemoCore-zh-Hans.xml" />
     <EmbeddedResource Include="Localization\SourceFiles\DemoCore.xml" />
+    <EmbeddedResource Include="Localization\XmlData\Navigation.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Abp.AutoMapper" Version="3.8.1" />

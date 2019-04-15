@@ -31,5 +31,8 @@
       <Action Name="Edit" Title="编辑" PermissionName="Goods.Edit"/>
       <Action Name="Delete" Title="删除" PermissionName="Goods.Delete"/>
     </Second>
+    <Second Name="AdvertCategory"  Title="广告位" PermissionName="Goods.AdvertCategory" Url="/" Icon="home"></Second>
+
+    <Second Name="Advert"  Title="广告" PermissionName="Goods.Advert" Url="/" Icon="home"></Second>
   </First>
 </Navigation>

@@ -1,0 +1,307 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\test\\DemoCore.Tests\\DemoCore.Tests.csproj": {}
+  },
+  "projects": {
+    "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Application\\DemoCore.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Application\\DemoCore.Application.csproj",
+        "projectName": "DemoCore.Application",
+        "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Application\\DemoCore.Application.csproj",
+        "packagesPath": "C:\\Users\\jm\\.nuget\\packages\\",
+        "outputPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\DemoCore.Core.csproj": {
+                "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\DemoCore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\DemoCore.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\DemoCore.Core.csproj",
+        "projectName": "DemoCore.Core",
+        "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\DemoCore.Core.csproj",
+        "packagesPath": "C:\\Users\\jm\\.nuget\\packages\\",
+        "outputPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Abp.AutoMapper": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            },
+            "Abp.ZeroCore.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            },
+            "Castle.Windsor.MsDependencyInjection": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.EntityFrameworkCore\\DemoCore.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.EntityFrameworkCore\\DemoCore.EntityFrameworkCore.csproj",
+        "projectName": "DemoCore.EntityFrameworkCore",
+        "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.EntityFrameworkCore\\DemoCore.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\jm\\.nuget\\packages\\",
+        "outputPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\DemoCore.Core.csproj": {
+                "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Core\\DemoCore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\test\\DemoCore.Tests\\DemoCore.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\test\\DemoCore.Tests\\DemoCore.Tests.csproj",
+        "projectName": "DemoCore.Tests",
+        "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\test\\DemoCore.Tests\\DemoCore.Tests.csproj",
+        "packagesPath": "C:\\Users\\jm\\.nuget\\packages\\",
+        "outputPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\test\\DemoCore.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Application\\DemoCore.Application.csproj": {
+                "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.Application\\DemoCore.Application.csproj"
+              },
+              "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.EntityFrameworkCore\\DemoCore.EntityFrameworkCore.csproj": {
+                "projectPath": "G:\\杂项\\Me\\DemoCore\\4.0.1\\aspnet-core\\src\\DemoCore.EntityFrameworkCore\\DemoCore.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Abp.TestBase": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.8.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
