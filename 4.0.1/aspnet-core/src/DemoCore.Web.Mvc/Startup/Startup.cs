@@ -13,7 +13,11 @@ using DemoCore.Configuration;
 using DemoCore.Identity;
 using DemoCore.Web.Resources;
 using Abp.AspNetCore.SignalR.Hubs;
-
+using System.Threading;
+using System.Text;
+using System.Net.WebSockets;
+using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 
 namespace DemoCore.Web.Startup
 {
@@ -72,7 +76,30 @@ namespace DemoCore.Web.Startup
             {
                 routes.MapHub<AbpCommonHub>("/signalr");
             });
-
+            app.Map("/ws", SocketHandler.Map);
+            //app.UseWebSockets();
+            //app.Use(async (context, next) =>
+            //{
+            //    if (context.WebSockets.IsWebSocketRequest)
+            //    {
+            //        using (IServiceScope scope = app.ApplicationServices.CreateScope())
+            //        {
+            //            //do something 
+            //            WebSocket webSocket = await context.WebSockets.AcceptWebSocketAsync();
+            //            await Echo(context, webSocket);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        //Hand over to the next middleware
+            //        await next();
+            //    }
+            //});
+            app.UseCors(builder => builder
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials());
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -83,6 +110,33 @@ namespace DemoCore.Web.Startup
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        public async Task Echo(HttpContext context, WebSocket webSocket)
+        {
+            var buffer = new byte[1024 * 4];
+            WebSocketReceiveResult result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+            while (!result.CloseStatus.HasValue)
+            {
+
+                for (int i = 0; i < 1000; i++)
+                {
+                    string userMsg = i.ToString();
+                    byte[] x = Encoding.UTF8.GetBytes(userMsg);
+                    var outgoing = new ArraySegment<byte>(x);
+                    await webSocket.SendAsync(outgoing, WebSocketMessageType.Text, true, CancellationToken.None);
+                    if (i == 5)
+                    {
+                        //关闭Stocket
+                        await webSocket.CloseAsync(result.CloseStatus.Value, result.CloseStatusDescription, CancellationToken.None);
+                    }
+                }
+
+                // await webSocket.SendAsync(new ArraySegment<byte>(buffer, 0, result.Count), result.MessageType, result.EndOfMessage, CancellationToken.None);
+
+                //result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+            }
+
         }
     }
 }
