@@ -121,4 +121,5 @@ G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Web.Mvc\obj\Debug\netcoreap
 G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Web.Mvc\obj\Debug\netcoreapp2.1\DemoCore.Web.Mvc.dll
 G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Web.Mvc\obj\Debug\netcoreapp2.1\DemoCore.Web.Mvc.pdb
 G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Test\Default.g.cshtml.cs
+G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Areas\GoodsManage\Views\Goods\List11.g.cshtml.cs
 G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Web.Mvc\obj\Debug\netcoreapp2.1\Razor\Areas\GoodsManage\Views\Goods\List.g.cshtml.cs

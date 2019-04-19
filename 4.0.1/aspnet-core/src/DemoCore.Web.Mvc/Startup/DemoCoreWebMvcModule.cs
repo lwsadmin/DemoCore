@@ -6,6 +6,7 @@ using DemoCore.Configuration;
 
 namespace DemoCore.Web.Startup
 {
+    //[DependsOn(typeof(AbpWebSignalRModule))]
     [DependsOn(typeof(DemoCoreWebCoreModule))]
     public class DemoCoreWebMvcModule : AbpModule
     {
