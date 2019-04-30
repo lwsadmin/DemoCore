@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using DemoCore.Configuration;
+using Abp.Web.SignalR;
 
 namespace DemoCore.Web.Startup
 {

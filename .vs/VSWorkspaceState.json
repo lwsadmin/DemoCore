@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\4.0.1",
+    "\\4.0.1\\aspnet-core",
+    "\\4.0.1\\aspnet-core\\src",
+    "\\4.0.1\\aspnet-core\\src\\DemoCore.Web.Mvc",
+    "\\4.0.1\\aspnet-core\\src\\DemoCore.Web.Mvc\\Startup"
+  ],
+  "SelectedNode": "\\4.0.1\\aspnet-core\\src\\DemoCore.Web.Mvc\\Startup\\DemoCoreWebMvcModule.cs",
+  "PreviewInSolutionExplorer": false
+}

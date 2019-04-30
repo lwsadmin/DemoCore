@@ -18,7 +18,10 @@ using System.Text;
 using System.Net.WebSockets;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
+using Owin;
+using Microsoft.Owin;
 
+[assembly: OwinStartup(typeof(DemoCore.Web.Startup.Startup))]
 namespace DemoCore.Web.Startup
 {
     public class Startup
@@ -43,6 +46,7 @@ namespace DemoCore.Web.Startup
             services.AddScoped<IWebResourceManager, WebResourceManager>();
 
             services.AddSignalR();
+          //  services.AddSignalRCore();
 
             // Configure Abp and Dependency Injection
             return services.AddAbp<DemoCoreWebMvcModule>(
@@ -56,7 +60,8 @@ namespace DemoCore.Web.Startup
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseAbp(); // Initializes ABP framework.
-
+            //app.MapSignalR();
+           // app.MapSignalR();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

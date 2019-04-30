@@ -348,6 +348,10 @@
               "target": "Package",
               "version": "[3.8.1, )"
             },
+            "Abp.Web.SignalR": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "AspNet.Security.OpenIdConnect.Server": {
               "target": "Package",
               "version": "[1.0.2, )"
@@ -407,6 +411,10 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
             "Microsoft.VisualStudio.Web.BrowserLink": {
               "target": "Package",
               "version": "[2.1.1, )"
@@ -415,6 +423,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.9, )"
+            },
+            "Owin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "PaulMiami.AspNetCore.Mvc.Recaptcha": {
               "target": "Package",

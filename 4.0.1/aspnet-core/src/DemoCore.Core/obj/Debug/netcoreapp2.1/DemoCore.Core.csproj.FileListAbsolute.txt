@@ -16,3 +16,4 @@ G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Core\obj\Debug\netcoreapp2.
 G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Core\obj\Debug\netcoreapp2.1\DemoCore.Core.AssemblyInfo.cs
 G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Core\obj\Debug\netcoreapp2.1\DemoCore.Core.dll
 G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Core\obj\Debug\netcoreapp2.1\DemoCore.Core.pdb
+G:\杂项\Me\DemoCore\4.0.1\aspnet-core\src\DemoCore.Core\obj\Debug\netcoreapp2.1\DemoCore.Core.csprojAssemblyReference.cache

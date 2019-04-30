@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "59d24348b67263670450d33e1d0e156142a0c1b9"
+    "signature": "3e7b2d01a3ce6c24477f331bea963b253e978259"
   },
   "compilationOptions": {
     "defines": [
@@ -27,6 +27,7 @@
           "Abp.Castle.Log4Net": "3.8.1",
           "Abp.HangFire": "3.8.1",
           "Abp.RedisCache": "3.8.1",
+          "Abp.Web.SignalR": "4.5.0",
           "AspNet.Security.OpenIdConnect.Server": "1.0.2",
           "Castle.LoggingFacility.MsLogging": "3.1.0",
           "DemoCore.Web.Core": "1.0.0",
@@ -42,8 +43,10 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
+          "Microsoft.Owin": "4.0.1",
           "Microsoft.VisualStudio.Web.BrowserLink": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
+          "Owin": "1.0.0",
           "PaulMiami.AspNetCore.Mvc.Recaptcha": "1.2.1"
         },
         "runtime": {
@@ -221,6 +224,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Abp.Web.Common.dll": {}
+        }
+      },
+      "Abp.Web.SignalR/4.5.0": {
+        "runtime": {
+          "lib/net461/Abp.Web.SignalR.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/net461/Abp.Web.SignalR.dll": {}
         }
       },
       "Abp.Zero.Common/3.8.1": {
@@ -2444,6 +2458,20 @@
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {},
+      "Microsoft.Owin/4.0.1": {
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.14582.116"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
       "Microsoft.VisualStudio.Web.BrowserLink/2.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
@@ -2725,6 +2753,17 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "runtime": {
+          "lib/net40/Owin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Owin.dll": {}
         }
       },
       "PaulMiami.AspNetCore.Mvc.Recaptcha/1.2.1": {
@@ -4928,6 +4967,13 @@
       "path": "abp.web.common/3.8.1",
       "hashPath": "abp.web.common.3.8.1.nupkg.sha512"
     },
+    "Abp.Web.SignalR/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w93ExQBhbUvNnItWioMiPjI2qVsmgh+DZ+nHfgEzkfhohxUAIUWGmtU1R8rXNLTHDKplJjAMDe5AhG59I9jBuQ==",
+      "path": "abp.web.signalr/4.5.0",
+      "hashPath": "abp.web.signalr.4.5.0.nupkg.sha512"
+    },
     "Abp.Zero.Common/3.8.1": {
       "type": "package",
       "serviceable": true,
@@ -5908,6 +5954,13 @@
       "path": "microsoft.netcore.windows.apisets/1.0.1",
       "hashPath": "microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512"
     },
+    "Microsoft.Owin/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J3v8nn9ABr5rm22EOyvndAP/gjP2AnhhfZuI2A7lTPO4+j27SpVv6P/Zs29+/AzSpC8qkE6GIe43vodPMF5DpA==",
+      "path": "microsoft.owin/4.0.1",
+      "hashPath": "microsoft.owin.4.0.1.nupkg.sha512"
+    },
     "Microsoft.VisualStudio.Web.BrowserLink/2.1.1": {
       "type": "package",
       "serviceable": true,
@@ -6040,6 +6093,13 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "Owin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "path": "owin/1.0.0",
+      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "PaulMiami.AspNetCore.Mvc.Recaptcha/1.2.1": {
       "type": "package",

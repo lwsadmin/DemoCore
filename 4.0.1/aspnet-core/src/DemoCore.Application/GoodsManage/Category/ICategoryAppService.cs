@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services;
@@ -11,5 +12,7 @@ namespace DemoCore.GoodsManage.Category.Dto
        Task<List<CategoryListDto>> GetAllListAsync();
         Task CreateOrEditAsync(CategoryEditDto dto);
         Task DeleteAsync(long id);
+
+        Task<MemoryStream> Export();
     }
 }
